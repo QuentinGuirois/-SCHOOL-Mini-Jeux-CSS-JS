@@ -1,0 +1,52 @@
+#bloc{
+    background:url(img/ciel.png);
+    margin:0 auto;
+    overflow:hidden;
+    position: relative;
+    width:800px;
+    height: 740px;
+    animation: ciel 1s infinite linear;
+    -webkit-animation: ciel 1s infinite linear;
+
+}
+@-webkit-keyframes ciel{
+    to{
+        background-position: -800px 0 ;
+    }
+}
+@keyframes ciel{
+    to{
+        background-position: -800px 0;
+    }
+}
+
+#avion{
+    position:absolute;
+    top: 300px;
+    left: 0;
+    -webkit-transition:200ms;
+    transition:200ms;
+}
+
+#compteur{
+    position: absolute;
+    color: orange;
+    top:0;
+    right:0;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#roquette1 {
+    position:absolute;
+    top:0;
+    left:800px;
+    z-index:1;
+}
+
+#roquette2 {
+    position:absolute;
+    top:0;
+    left:800px;
+    z-index:2;
+}
